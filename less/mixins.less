@@ -3,3 +3,14 @@
   display: flex;
   flex-flow: row wrap;
 }
+
+.custom-button(@width,@height,@font-size, @align,@color,@padding,@bg-color, @radius) {
+  width: @width;
+  height: @height;
+  font-size: @font-size;
+  text-align: @align;
+  color: @color;
+  padding: @padding;
+  background-color: @bg-color;
+  border-radius: @radius;
+}

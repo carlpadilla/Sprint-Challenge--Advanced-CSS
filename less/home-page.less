@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,18 +55,32 @@
       }
 
       .btn {
+        .custom-button(
+          100px,
+          30px,
+          1.5rem,
+          center,
+          @porcelain,
+          10px,
+          @shuttle-gray,
+          10px
+        );
+        &:hover {
+          cursor: pointer;
+          background-color: lighten(@shuttle-gray, 20%);
+        }
       }
-    }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
       }
     }
-  }
-}// home
+  } // home
+}
